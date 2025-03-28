@@ -152,10 +152,55 @@
               mask: radial-gradient(100% 100% at 100% 0, #fff, #0000);
     }
   }
+  
+  /* form */ 
+form { max-width:80vw; max-height: auto; margin:20px 20px; padding: 20px }
+
+.feedback-input {
+  color:white;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight:500;
+  font-size: 14px;
+  border-radius: 5px;
+  line-height: 16px;
+  background-color: transparent;
+  border:1px solid #CC6666;
+  transition: all 0.3s;
+  padding: 5px;
+  margin-bottom: 5px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+.feedback-input:focus { border:1px solid #CC4949; }
+
+textarea {
+  height: 10vh;
+  line-height: 100%;
+  resize:vertical;
+}
+
+[type="submit"] {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  width: 100%;
+  background:#CC6666;
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color:white;
+  font-size:16px;
+  padding-top:5px;
+  padding-bottom:5px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:500;
+}
+[type="submit"]:hover { background:#CC4949; }
   /* gotta use some Math on the container really */
   /* width is "ideal" 7 * 80px + 6 * gap + say 300px or whatever the ideal width is */
   :root {
-    --gap: 8px;
+    --gap: 4px;
     --base: clamp(2rem, 8cqi, 80px);
     --easing: linear(
       0 0%,
